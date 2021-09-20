@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External css link-->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- JQuery CDN -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>SHOPLANE</title>
+</head>
+<body>
+    <!--navbar section start-->
+    <section id="navbar"></section>
+    <!--navbar section ends-->
+    <div style="padding-top: 80px"></div>
+    <!--cart section start-->
+    <section id="cart">
+        <h1>Checkout</h1>
+        <div class="cart-container">
+          <div class="left-side">
+            <p>Total Items: <span id="number-of-item"></span></p>
+            <div class="cart-items" id="cart-item-container"></div>
+          </div>
+          <div class="right-side">
+            <div class="total-amount">
+              <h2>Total Amount</h2>
+              <p>Total Amount: Rs <span id="total-amount"></span></p>
+              <a href="./ordercomform.html">
+                <button id="place-order">Place Order</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--cart section ends-->
+    <section class="footer"></section>
+    <!--External javaScript link -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
