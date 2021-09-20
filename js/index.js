@@ -15,14 +15,14 @@ if(
 window.location.pathname === "/" ||
 window.location.pathname === "/index.html"
 ){
+	sliding();
+	anim();
   getApiRequest();
 }else if (window.location.pathname === "/productdetails.html") {
   productDetail();
 }else if (window.location.pathname === "/checkout.html") {
   createItemOnCheckOut();
 }
-sliding();
-anim();
 
 navbar.innerHTML += navigation();
 footer.innerHTML += foot();
